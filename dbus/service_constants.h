@@ -692,7 +692,15 @@ namespace wimax_manager {
 // WiMaxManager D-Bus service identifiers
 const char kWiMaxManagerServiceName[] = "org.chromium.WiMaxManager";
 const char kWiMaxManagerServicePath[] = "/org/chromium/WiMaxManager";
+const char kWiMaxManagerServiceError[] = "org.chromium.WiMaxManager.Error";
 const char kWiMaxManagerInterface[] = "org.chromium.WiMaxManager";
+const char kDeviceObjectPathPrefix[] = "/org/chromium/WiMaxManager/Device/";
+const char kNetworkObjectPathPrefix[] = "/org/chromium/WiMaxManager/Network/";
+const char kDevicesProperty[] = "Devices";
+const char kNetworksProperty[] = "Networks";
+const char kEAPAnonymousIdentity[] = "EAPAnonymousIdentity";
+const char kEAPUserIdentity[] = "EAPUserIdentity";
+const char kEAPUserPassword[] = "EAPUserPassword";
 }  // namespace wimax_manager
 
 namespace bluetooth_common {
