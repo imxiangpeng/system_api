@@ -630,6 +630,8 @@ const char kHostNameProperty[] = "HostName";
 const char kPortalCheckIntervalProperty[] = "PortalCheckInterval";
 
 // Service property names.
+const char kEapRemoteCertificationProperty[] = "EAP.RemoteCertification";
+const char kEapSubjectMatchProperty[] = "EAP.SubjectMatch";
 const char kHTTPProxyPortProperty[] = "HTTPProxyPort";
 const char kIPConfigProperty[] = "IPConfig";
 const char kPhysicalTechnologyProperty[] = "PhysicalTechnology";
@@ -701,6 +703,15 @@ const char kNetworksProperty[] = "Networks";
 const char kEAPAnonymousIdentity[] = "EAPAnonymousIdentity";
 const char kEAPUserIdentity[] = "EAPUserIdentity";
 const char kEAPUserPassword[] = "EAPUserPassword";
+
+enum DeviceStatus {
+  kDeviceStatusUninitialized,
+  kDeviceStatusDisabled,
+  kDeviceStatusReady,
+  kDeviceStatusScanning,
+  kDeviceStatusConnecting,
+  kDeviceStatusConnected
+};
 }  // namespace wimax_manager
 
 namespace bluetooth_common {
